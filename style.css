@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px; 
+    padding: 0px;
+}
+
+/* fontes externas baixadas*/
+@font-face {
+    font-family: 'PassionOne';
+    src: url('fontes/PassionOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+}
+
+/* variaveis */
+:root{
+    --fontepadrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fontetitulo: 'PassionOne', cursive;
+    --fonteparagrafos: 'Sriracha', cursive;
+}
+
+/* cabecalho */
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--fontetitulo);
+    padding: 30px 0px 10px 0px;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header p{
+    font-family: var(--fontepadrao);
+    padding: 10px 0px 40px 0px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+/* conteudo */
+section p{/* paragrafo geral */
+    font-family: var(--fonteparagrafos);
+    padding: 60px 30px;
+    font-size: 3.5vw;
+    line-height: 2em;
+}
+
+.image p{
+    background-color: rgba(0, 0, 0, 0.541);
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px 7px black;
+    margin: 35px;
+    padding: 30px;
+}
+
+#img1, #img2{
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 1px 2px 10px rgba(0, 0, 0, 0.493);
+}
+
+#img1{
+    background-image: url('imagens/background001.jpg');
+}
+
+#img2{
+    background-image: url('imagens/background002.jpg');
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    font-family: var(--fontepadrao);
+    padding: 10px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
